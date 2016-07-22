@@ -64,7 +64,7 @@ cat << EOF > ${WORKSPACE}/build/$CONFIG-iphoneos/$IPA_NAME.plist
                                 <key>bundle-identifier</key>
                                 <string>xxx</string>
                                 <key>bundle-version</key>
-                                <string>1.0.0</string>
+                                <string>$VN</string>
                                 <key>kind</key>
                                 <string>software</string>
                                 <key>title</key>
