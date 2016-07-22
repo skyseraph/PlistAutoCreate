@@ -3,4 +3,4 @@ A shell script for auto create plist and html publish file for iOS app
 
 ![](Jenkins CI.png)
 
-More inf ref. to this page 
+More inf ref. to [this page](http://skyseraph.com/2016/07/18/Tools/Jenkins%20Gitlab%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%89%93%E5%8C%85%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/) 
