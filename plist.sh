@@ -78,21 +78,32 @@ EOF
 
 cat << EOF > ${WORKSPACE}/build/$CONFIG-iphoneos/index.html
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>XXX-iOS OTA Install</title>
+</head>
 <body>
 <p style="text-align:center;">
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
 </p>
 
-<h1 style="text-align:center;">
-    <a style="font-size:128px;" href="itms-services://?action=download-manifest&url=$BUILD_URLS/$BUILD_NUMBER/artifact/build/$CONFIG-iphoneos/$IPA_NAME.plist">Install App</a>
+<h1 style="text-align:left;">
+    <a style="font-size:48px;" href="itms-services://?action=download-manifest&url=$BUILD_URLS/$BUILD_NUMBER/artifact/build/$CONFIG-iphoneos/$IPA_NAME.plist">Install App</a>
 </h1>
+
+<h1 style="text-align:left;">
+    <a style="font-size:48px;" href="$BUILD_URL/$BUILD_NUMBER/artifact/ca.crt">Install ssl 证书</a>
+</h1>
+<br>
+<h1 style="font-size:23pt">有问题请联系XXX<h1/>
+<!---->
+<p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-size:28px;"><strong><span style="background-color:#FFFF00;">安装方式： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong></span> </strong> </p>
+
+<p style="font-family:Tahoma, Arial;font-size:14px; text-align:left;"><strong><span style="color:#FF0000;font-family:'lucida grande';line-height:1.5;background-color:#FFFFFF;">&nbsp; &nbsp;第一次安装</span><span style="color:#FF0000;font-family:'lucida grande';line-height:1.5;">需4步</span><span style="color:#FF0000;font-family:'lucida grande';line-height:1.5;background-color:#FFFFFF;">：</span> </strong> </p><p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';">&nbsp;&nbsp;&nbsp;&nbsp;﻿&nbsp;&nbsp;&nbsp;﻿1.用UC浏览器扫描二维码；</span> </strong> </p><p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';">&nbsp;&nbsp;&nbsp;&nbsp;﻿&nbsp;&nbsp;&nbsp;﻿﻿2.将链接拷贝，用Safari打开；<br /> </span> </strong> </p><p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';">&nbsp;&nbsp;&nbsp;&nbsp;﻿&nbsp;&nbsp;&nbsp;﻿3.进行SSL证书安装；</span><span style="font-family:'lucida grande';line-height:1.5;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span> </strong> </p><p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';">&nbsp;&nbsp;&nbsp;&nbsp;﻿&nbsp;&nbsp;&nbsp;﻿﻿4.可以在UC浏览器或者Safari里面点击打开安装</span></strong></p>
+
+<p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';color:#FF0000;background-color:#FFFFFF;">&nbsp; &nbsp;以后安装只需2步：</span> </strong> </p><p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';">&nbsp;&nbsp;&nbsp;&nbsp;﻿&nbsp;&nbsp;&nbsp;﻿﻿1.直接UC浏览器扫描二维码；</span> </strong> </p><p style="font-family:Tahoma, Arial;font-size:14px;"><strong><span style="font-family:'lucida grande';">&nbsp;&nbsp;&nbsp;&nbsp;﻿&nbsp;&nbsp;&nbsp;﻿﻿2.点击安装链接进行安装；</span></strong></p>
+
 </body>
 </html>
 EOF
